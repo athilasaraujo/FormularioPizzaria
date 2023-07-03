@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>Pedido pizza</h1>
+    <!-- Formulário -->
+    <form method="post" action="teste.jsp">
+        <!-- Campo de Nome -->
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <!-- Campo de Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!-- Campo de Tamanho -->
+        <div>
+            <label>Tamanho:</label>
+            <input type="radio" name="tamanho" value="g" id="tamanho-g" checked>
+            <label for="tamanho-g">Grande</label>
+            <input type="radio" name="tamanho" value="m" id="tamanho-m">
+            <label for="tamanho-m">Medio</label>
+            <input type="radio" name="tamanho" value="p" id="tamanho-p">
+            <label for="tamanho-p">Pequeno</label>
+        </div>
+
+        <!-- Campo de Sabor -->
+        <div>
+        <label for="sabor">Sabor:</label>
+            <select name="sabor" id="sabor">
+                <option>Calabresa</option>
+                <option>Napolitana</option>
+                <option>Marguerita</option>
+            </select>
+        </div>
+
+        <!-- Campo de Adicionais -->
+        <div>
+            <label>Adicionais:</label>
+            <input type="checkbox" name="borda" value="sim" id="borda">
+            <label for="borda">Borda</label>
+            <input type="checkbox" name="queijo" value="sim" id="queijo">
+        <label for="queijo">Queijo</label>
+         </div>
+
+        <!-- Campo de Data de Entrega -->
+        <div>
+            <label for="dataEntrega">Data Entrega:</label>
+            <input type="date" name="dataEntrega" id="dataEntrega">
+        </div>
+
+        <!-- Campo de Comentário -->
+        <div>
+            <label for="msg">Comentário:</label>
+            <textarea name="msg" id="msg" rows="10" cols="30"></textarea>
+        </div>
+
+        <!-- Botão de Envio -->
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+/* Estilo da caixa do formulário */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo do formulário */
+body {
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Estilo para o título da página */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para rótulos de campos */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo para campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para campos de rádio e caixas de seleção */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para opções de rádio, caixas de seleção e o campo de seleção */
+input[type="radio"],
+input[type="checkbox"],
+select {
+    margin-right: 10px;
+}
+
+/* Estilo para rótulos de campos lado a lado */
+label {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+/* Estilo para o campo de seleção */
+select {
+    width: 100%;
+}
+
+/* Estilo para o campo de comentário */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo para o campo de borda */
+#borda:checked + label[for="borda"],
+#queijo:checked + label[for="queijo"] {
+    font-weight: bold;
+    color: #007bff;
+}
